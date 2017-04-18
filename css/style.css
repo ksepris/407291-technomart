@@ -1,0 +1,47 @@
+body{
+  font-size: 13pt;
+  line-height: 24pt;
+  color: #000000;
+  font-weight: normal;
+  font-family: "PTSans";
+}
+
+.catalog h2{
+  font-size: 24pt;
+  line-height: 30pt;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Cuprum";
+}
+
+.title h2{
+  font-size: 30pt;
+  line-height: 30pt;
+  color: #3d546e;
+  font-weight: normal;
+  font-family: "Cuprum";
+}
+
+.services h2, .company h2, .main_block h2{
+  font-size: 30pt;
+  line-height: 24pt;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Cuprum";
+}
+
+h1{
+  font-size: 18pt;
+  line-height: 20pt;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PTSans";
+}
+
+.catalog_title h1{
+  font-size: 30pt;
+  line-height: 30pt;
+  color: #32425c;
+  font-weight: normal;
+  font-family: "Cuprum";
+}

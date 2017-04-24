@@ -4,6 +4,7 @@ body{
   color: #000000;
   font-weight: normal;
   font-family: "PTSans";
+  margin: 0;
 }
 
 .catalog h2{
@@ -12,6 +13,14 @@ body{
   color: #ffffff;
   font-weight: bold;
   font-family: "Cuprum";
+  margin-left: 22px;
+  margin-top: 24px;
+}
+
+.title{
+  background-color: #f9f5f0;
+  width: 940px;
+  margin-bottom: 20px;
 }
 
 .title h2{
@@ -20,7 +29,24 @@ body{
   color: #3d546e;
   font-weight: normal;
   font-family: "Cuprum";
-  background-color: #f9f5f0;
+  float: left;
+  margin-left: 30px;
+}
+
+.main_btn{
+  padding: 12px 55px;
+  background-color: #ff5357;
+  font-size: 14pt;
+  line-height: 18pt;
+  color: #ffffff;
+  font-weight: normal;
+  font-family: "Cuprum";
+}
+
+.title .main_btn {
+  margin-right: 25px;
+  margin-top: 25px;
+  float: right;
 }
 
 .services h2, .company h2, .main_block h2{
@@ -45,12 +71,14 @@ h1{
   color: #32425c;
   font-weight: normal;
   font-family: "Cuprum";
+  background-color: #f2f6f8;
+  padding: 30px 30px;
+  margin-bottom: 20px;
 }
 
 .container{
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
   outline: 1px solid yellow;
 }
 
@@ -80,7 +108,6 @@ h1{
 
 .contacts{
   width: 270px;
-  outline: 1px solid green;
   float: left;
   margin-right: 68px;
 }
@@ -94,11 +121,15 @@ h1{
 .header_nav{
   background-color: #3d546e;
   outline: 1px solid green;
+  font-size: 17pt;
+  line-height: 17pt;
+  color: #ffffff;
+  font-weight: normal;
+  font-family: "Cuprum";
 }
 
 .clearfix{
   content: "";
-
   display: table;
   clear: both;
 }
@@ -131,13 +162,27 @@ h1{
   margin-bottom: 20px;
 }
 
+/*фон не появился почему-то*/
 .catalog_slider{
   float: left;
+  width: 620px;
+  height: 266px;
+  background-image: url(img/catalog_slider_photo_1.jpg);
+  background-color: #806e5a;
+  outline: 1px solid green;
 }
 
-/*не понял как поместить кнопку поверх элемента*/
-.catalog_slider .main_btn{
+.catalog_slider_text{
+  margin-top: 20px;
+  margin-left: 26px;
+  outline: 1px solid green;
+}
 
+/*как-то не понятно как тут работает, пришлось делать инлайнблок, иначе с места не сдвигалась кнопка, а расстояние на глаз пришлось, не понял откуда считать*/
+.catalog_slider .main_btn{
+  display: inline-block;
+  margin-left: 26px;
+  margin-top: 135px;
 }
 
 .discount{
@@ -149,6 +194,10 @@ h1{
 .delivery{
   float: right;
   background-color: #ffc047;
+}
+
+.products{
+  margin-bottom: 20px;
 }
 
 .products_item{
@@ -184,7 +233,6 @@ h1{
   padding-bottom: 88px;
 }
 
-/*не понял, почему фон не растягивается по ширине, нужно вынести из блока main?*/
 .services{
   background-color: #f3f7f8;
 }
@@ -195,7 +243,6 @@ h1{
   outline: 1px solid green;
 }
 
-/*не прилипает почему-то к правому краю*/
 .company_contacts{
   width: 300px;
   float: right;
@@ -218,12 +265,22 @@ h1{
   float: right;
   margin-top: 40px;
   outline: 1px solid green;
+  font-size: 18pt;
+  line-height: 24pt;
+  color: #ffffff;
+  font-weight: normal;
+  font-family: "Cuprum";
 }
 
 .catalog_nav{
   width: 560px;
   float: right;
   margin-top: 40px;
+  font-size: 18pt;
+  line-height: 24pt;
+  color: #ffda96;
+  font-weight: normal;
+  font-family: "Cuprum";
   outline: 1px solid green;
 }
 
@@ -237,6 +294,11 @@ h1{
   width: 240px;
   float: left;
   margin-right: 150px;
+  font-size: 16pt;
+  line-height: 18pt;
+  color: #ffffff;
+  font-weight: normal;
+  font-family: "Cuprum";
   outline: 1px solid green;
 }
 
@@ -249,5 +311,205 @@ h1{
 .footer_contacts{
   width: 300px;
   float: right;
+  font-size: 18pt;
+  line-height: 24pt;
+  color: #ffffff;
+  font-weight: normal;
+  font-family: "Cuprum";
   outline: 1px solid green;
+}
+
+.breadcrumbs{
+  margin-top: 22px;
+  margin-bottom: 22px;
+  font-size: 13pt;
+  line-height: 18pt;
+  color: #000000;
+  font-weight: normal;
+  font-family: "PTSans";
+  outline: 1px solid green;
+}
+
+.aside_catalog_form {
+  width: 219px;
+  float: left;
+  margin-right: 20px;
+  outline: 1px solid green;
+}
+
+/*не понятно почему не влезло? вроде все пиксель в пиксель должно войти*/
+.aside_catalog_main{
+  width: 700px;
+  float: right;
+  outline: 1px solid green;
+}
+
+.aside_catalog_name{
+  background-color: #f7f3ec;
+  padding: 12px 18px;
+  display: block;
+  font-size: 13pt;
+  line-height: 18pt;
+  color: #000000;
+  font-weight: normal;
+  font-family: "PTSans";
+}
+
+h3{
+  font-size: 17pt;
+  line-height: 30pt;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PTSans";
+}
+
+.catalog_sort{
+  background-color: #f7f3ec;
+  outline: 1px solid green;
+}
+
+/*не знаю как применить эти стили только на второй странице*/
+.products_item:last-child{
+  margin-right: auto;
+}
+
+.products_item{
+  margin-right: 19px;
+  margin-bottom: 20px;
+}
+
+.products_item:nth-child(3n){
+  margin-right: 0;
+  float: right;
+}
+
+.aside_catalog{
+  margin-bottom: 60px;
+}
+
+.few_words{
+  background-color: #f3f7f8;
+}
+
+.bookmarks, .basket, .order {
+  font-size: 17pt;
+  line-height: 18pt;
+  color: #ffffff;
+  font-weight: normal;
+  font-family: "Cuprum";
+}
+
+.info {
+  font-size: 16pt;
+  line-height: 23pt;
+  color: #ff5357;
+  font-weight: normal;
+  font-style: italic;
+  font-family: "Cuprum";
+}
+
+.phone {
+  outline: 3px solid white;
+  font-size: 21pt;
+  line-height: 18pt;
+  color: #fb463c;
+  font-weight: normal;
+  font-family: "Cuprum";
+}
+
+.address {
+  font-size: 14pt;
+  line-height: 24pt;
+  color: #3d546e;
+  font-weight: normal;
+  font-family: "Cuprum";
+}
+
+.login, .register {
+  font-size: 21pt;
+  line-height: 18pt;
+  color: #000000;
+  font-weight: normal;
+  font-family: "Cuprum";
+}
+
+.item_btn {
+  font-size: 14pt;
+  line-height: 18pt;
+  color: #ffffff;
+  font-weight: normal;
+  font-family: "Cuprum";
+  background-color: rgba(0 0 0 0.1);
+  padding: 12px 24px;
+  display: inline-block;
+  margin-left: 25px;
+  margin-bottom: 22px;
+}
+
+.products_price {
+  font-size: 17pt;
+  line-height: 18pt;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "PTSans";
+  background-color: #ff5357;
+  padding: 12px 35px;
+  display: inline-block;
+}
+
+.products_old_price {
+  font-size: 17pt;
+  line-height: 18pt;
+  color: #a9a9a9;
+  font-weight: bold;
+  font-family: "PTSans";
+  text-decoration: line-through;
+}
+
+.services_btn {
+  font-size: 21pt;
+  line-height: 30pt;
+  color: #3d546e;
+  font-weight: bold;
+  font-family: "Cuprum";
+}
+
+.services_name {
+  font-size: 36pt;
+  line-height: 24pt;
+  color: #3d546e;
+  font-weight: bold;
+  font-family: "Cuprum";
+}
+
+.trans_companies {
+  font-size: 18pt;
+  line-height: 20pt;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Cuprum";
+}
+
+.about p {
+  font-size: 18pt;
+  line-height: 24pt;
+  color: #ffffff;
+  font-weight: normal;
+  font-family: "Cuprum";
+}
+
+.sort_type_btn {
+  font-size: 13pt;
+  line-height: 18pt;
+  color: #ee3643;
+  font-weight: normal;
+  font-family: "PTSans";
+}
+
+.aside_catalog_form label {
+  font-size: 15pt;
+  line-height: 20pt;
+  color: #000000;
+  font-weight: normal;
+  font-family: "PTSans";
 }

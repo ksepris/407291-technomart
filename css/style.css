@@ -138,11 +138,27 @@ h1{
 }
 
 .catalog{
+  width: 940px;
   margin-top: 60px;
   margin-bottom: 52px;
   display: flex;
   justify-content: space-between;
+}
+
+.catalog_left{
+  display: flex;
+  justify-content: space-between;
+  width: 620px;
   flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.catalog_right{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .catalog_item{
@@ -164,11 +180,10 @@ h1{
   margin-bottom: 20px;
 }
 
-/*фон не появился почему-то*/
 .catalog_slider{
   width: 620px;
   height: 266px;
-  background-image: url(img/catalog_slider_photo_1.jpg);
+  background-image: url(../img/catalog_slider_photo_1.jpg);
   background-color: #806e5a;
   outline: 1px solid green;
 }

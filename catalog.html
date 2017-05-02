@@ -12,13 +12,14 @@
         <div class="container">
           <div class="site_options">
             <div class="logo">
-              <a href="index.html"><img src="img/logo.png" width="220" height="47" alt="Техномарт"></a>
+              <a><img src="img/logo.png" width="220" height="47" alt="Техномарт"></a>
             </div>
+            <!-- не знаю как прикрутить картинку к поиску -->
             <form action="https://echo.htmlacademy.ru" method="get">
               <input type="text" name="search" placeholder="Поиск">
             </form>
-            <a class="bookmarks" href="#">Закладки</a>
-            <a class="basket" href="#">Корзина</a>
+            <a class="bookmarks" href="#">Закладки: 0</a>
+            <a class="basket" href="#">Корзина: 0</a>
             <a class="order" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -37,9 +38,19 @@
               <div class="phone">+7 (812) 555-05-55</div>
               <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </div>
-            <div class="login_options">
-              <a class="login" href="#">Вход</a>
-              <a class="register" href="#">Регистрация</a>
+            <div class="login_options_logged">
+              <div class="username">
+                <a href="#">Равшан Джамшутович</a>
+<!--                <a><img src="img/logout.png" alt="logout" width="21" height="17"></a>-->
+              </div>
+              <ul class="my_orders">
+                <li>
+                  <a href="#">Мои заказы</a>
+                </li>
+                <li>
+                  <a href="#">Личный кабинет</a>
+                </li>
+              </ul>
             </div>
           </div>
           <nav class="header_nav">
@@ -75,7 +86,7 @@
         <div class="breadcrumbs">
           <ul>
             <li>
-              <a href="#"><img src="img/brcr_home.png" width="15" height="12"></a>
+              <a href="#"><img src="img/icons/icon_home.png" width="15" height="12"></a>
             </li>
             <li>
               <a href="#">КАТАЛОГ</a>
@@ -99,6 +110,7 @@
 
             </div>
             <h3>ПРОИЗВОДИТЕЛИ:</h3>
+            <!-- не знаю как прикрутить картинки к чекбоксам и радибаттонам -->
             <input type="checkbox" name="manufacter" value="BOSCH" id="BOSCH" checked>
             <label for="BOSCH">BOSCH</label>
             <input type="checkbox" name="manufacter" value="ИНТЕРСКОЛ" id="INTERSCOL">
@@ -120,7 +132,7 @@
             <div class="catalog_sort">
               <span class="aside_catalog_name">СОРТИРОВКА</span>
               <div class="sort_type">
-                <ul>
+                <ul class="sort_type_view">
                   <li>
                     <a class="sort_type_btn" href="#">ПО ЦЕНЕ</a>
                   </li>
@@ -223,10 +235,10 @@
               </article>
             </div>
             <div class="nav_btns">
-              <a class="nav_btn" href="#">1</a>
+              <a class="nav_btn current" href="#">1</a>
               <a class="nav_btn" href="#">2</a>
               <a class="nav_btn" href="#">3</a>
-              <a class="nav_btn_next" href="#">СЛЕДУЮЩАЯ</a>
+              <a class="nav_btn next" href="#">СЛЕДУЮЩАЯ</a>
             </div>
           </div>
         </div>
@@ -249,46 +261,48 @@
         <div class="container">
           <div class="up_footer_flex">
             <div class="about">
-              <a href="#"><img src="img/logo.png" width="220" height="47" alt="Техномарт"></a>
+              <a href="#"><img src="img/logo_footer.png" width="220" height="68" alt="Техномарт"></a>
               <p>
                 г. Санкт-Петербург, ул. Б.
                 Конюшенная, д. 19/8
               </p>
             </div>
-            <div class="footer_nav">
-              <ul>
-                <li>
-                  <a href="#">Компания</a>
-                </li>
-                <li>
-                  <a href="#">Новости</a>
-                </li>
-                <li>
-                  <a href="catalog.html">Каталог</a>
-                </li>
-                <li>
-                  <a href="#">Доставка</a>
-                </li>
-                <li>
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div class="catalog_nav">
-              <ul>
-                <li>
-                  <a href="#">Материалы</a>
-                </li>
-                <li>
-                  <a href="#">Техника</a>
-                </li>
-                <li>
-                  <a href="#">Инструмент</a>
-                </li>
-                <li>
-                  <a href="#">Спецпредложения</a>
-                </li>
-              </ul>
+            <div class="nav_block">
+              <div class="footer_nav">
+                <ul>
+                  <li>
+                    <a href="#">Компания</a>
+                  </li>
+                  <li>
+                    <a href="#">Новости</a>
+                  </li>
+                  <li>
+                    <a href="catalog.html">Каталог</a>
+                  </li>
+                  <li>
+                    <a href="#">Доставка</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="catalog_nav">
+                <ul>
+                  <li>
+                    <a href="#">Материалы</a>
+                  </li>
+                  <li>
+                    <a href="#">Техника</a>
+                  </li>
+                  <li>
+                    <a href="#">Инструмент</a>
+                  </li>
+                  <li>
+                    <a href="#">Спецпредложения</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -303,9 +317,9 @@
               </p>
             </div>
             <div class="footer_social">
-              <a class="social_btn social_btn_vk" href="#">Вконтакте</a>
-              <a class="social_btn social_btn_fb" href="#">Фейсбук</a>
-              <a class="social_btn social_btn_inst" href="#">Инстаграм</a>
+              <a class="social_btn btn_vk" href="#"></a>
+              <a class="social_btn btn_fb" href="#"></a>
+              <a class="social_btn btn_inst" href="#"></a>
             </div>
             <div class="footer_contacts">
               <p>

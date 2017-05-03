@@ -5,6 +5,8 @@
     <title>HTML Academy: Техномарт Каталог</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -14,10 +16,12 @@
             <div class="logo">
               <a><img src="img/logo.png" width="220" height="47" alt="Техномарт"></a>
             </div>
-            <!-- не знаю как прикрутить картинку к поиску -->
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <input type="text" name="search" placeholder="Поиск">
-            </form>
+            <div class="top_search">
+              <form action="https://echo.htmlacademy.ru" method="get">
+                <input type="text" class="top_search_input" name="search" placeholder="Поиск">
+                <label for="search" class="top_search_label"></label>
+              </form>
+            </div>
             <a class="bookmarks" href="#">Закладки: 0</a>
             <a class="basket" href="#">Корзина: 0</a>
             <a class="order" href="#">Оформить заказ</a>
@@ -40,8 +44,8 @@
             </div>
             <div class="login_options_logged">
               <div class="username">
-                <a href="#">Равшан Джамшутович</a>
-<!--                <a><img src="img/logout.png" alt="logout" width="21" height="17"></a>-->
+                <a class="name" href="#">Равшан Джамшутович</a>
+                <a class="logout" href="#"></a>
               </div>
               <ul class="my_orders">
                 <li>
@@ -111,7 +115,7 @@
             </div>
             <h3>ПРОИЗВОДИТЕЛИ:</h3>
             <!-- не знаю как прикрутить картинки к чекбоксам и радибаттонам -->
-            <input type="checkbox" name="manufacter" value="BOSCH" id="BOSCH" checked>
+            <input type="checkbox" class="checkbox" name="manufacter" value="BOSCH" id="BOSCH" checked>
             <label for="BOSCH">BOSCH</label>
             <input type="checkbox" name="manufacter" value="ИНТЕРСКОЛ" id="INTERSCOL">
             <label for="INTERSCOL">ИНТЕРСКОЛ</label>

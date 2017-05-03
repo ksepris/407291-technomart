@@ -1,6 +1,6 @@
 body{
-  font-size: 13pt;
-  line-height: 24pt;
+  font-size: 13px;
+  line-height: 24px;
   color: #000000;
   font-weight: normal;
   font-family: 'PT Sans', sans-serif;
@@ -9,16 +9,16 @@ body{
 }
 
 .header_nav a{
-  font-size: 17pt;
-  line-height: 17pt;
+  font-size: 17px;
+  line-height: 17px;
   color: #ffffff;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
   text-decoration: none;
   color: #ffffff;
-  padding: 20px 30px;
+  padding: 20px 34px;
   background-color: #3d546e;
-  display: block
+  display: block;
 }
 
 .header_nav a:hover{
@@ -34,26 +34,31 @@ body{
   background-color: #f9f5f0;
   width: 940px;
   margin-bottom: 20px;
+
+
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  
 }
 
 .title h2{
-  font-size: 30pt;
-  line-height: 30pt;
+  font-size: 30px;
+  line-height: 30px;
   color: #3d546e;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
   margin-left: 30px;
+  display: inline-block;
 }
 
 .main_btn{
   text-decoration: none;
-  padding: 12px 42px;
+  padding: 12px 55px;
   background-color: #ff5357;
-  font-size: 14pt;
-  line-height: 18pt;
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -70,28 +75,28 @@ body{
 
 .title .main_btn {
   margin-right: 25px;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .services h2, .company h2, .main_block h2{
-  font-size: 30pt;
-  line-height: 24pt;
+  font-size: 30px;
+  line-height: 24px;
   color: #000000;
   font-weight: bold;
   font-family: 'Cuprum', sans-serif;
 }
 
 h1{
-  font-size: 18pt;
-  line-height: 20pt;
+  font-size: 18px;
+  line-height: 20px;
   color: #000000;
   font-weight: bold;
   font-family: 'PT Sans', sans-serif;
 }
 
 .catalog_title h1{
-  font-size: 30pt;
-  line-height: 30pt;
+  font-size: 30px;
+  line-height: 30px;
   color: #32425c;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -107,21 +112,21 @@ h1{
 }
 
 .up_header{
-  background-color: #33445a;
+  background-color: #293449;
 }
 /*не понятно, как убрать отступ снизу у верхнего хэдера */
 
 .site_options{
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.site_options .logo{
-  margin-right: 48px;
-}
+
 
 .bookmarks, .basket, .order {
-  font-size: 17pt;
-  line-height: 18pt;
+  font-size: 17px;
+  line-height: 18px;
   color: #ffffff;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -130,11 +135,13 @@ h1{
 
 .bookmarks:active, .basket:active, .order:active{
   opacity: 0.6;
+  background-color: #161d29;
 }
 
 .bookmarks{
-  margin-left: auto;
-  padding: 12px 20px;
+/*  margin-left: auto;*/
+  width: 105px;
+  padding: 12px 0px;
   padding-left: 45px;
   position: relative;
 }
@@ -160,7 +167,8 @@ h1{
 }
 
 .basket{
-  padding: 12px 20px;
+  width: 105px;
+  padding: 12px 0px;
   padding-left: 45px;
   position: relative;
 }
@@ -213,8 +221,8 @@ h1{
 }
 
 .info {
-  font-size: 16pt;
-  line-height: 23pt;
+  font-size: 16px;
+  line-height: 23px;
   color: #ff5357;
   font-weight: normal;
   font-style: italic;
@@ -229,9 +237,9 @@ h1{
 }
 
 .phone {
-  outline: 3px solid white;
-  font-size: 21pt;
-  line-height: 18pt;
+  border: 3px solid white;
+  font-size: 21px;
+  line-height: 18px;
   color: #fb463c;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -251,8 +259,8 @@ h1{
 }
 
 .address {
-  font-size: 14pt;
-  line-height: 24pt;
+  font-size: 14px;
+  line-height: 24px;
   color: #3d546e;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -269,7 +277,7 @@ h1{
 .login_options .login{
   background-color: white;
   padding: 12px 20px;
-  padding-left: 25px;
+  padding-left: 48px;
   position: relative;
   text-decoration: none;
 }
@@ -353,14 +361,14 @@ h1{
 }
 
 .catalog h2{
-  font-size: 24pt;
-  line-height: 30pt;
+  font-size: 24px;
+  line-height: 30px;
   color: #ffffff;
   font-weight: bold;
   font-family: 'Cuprum', sans-serif;
   margin-left: 22px;
-  margin-top: 24px;
-  margin-bottom: 18px;
+  margin-top: 23px;
+  margin-bottom: 0px;
 }
 
 .catalog_item{
@@ -370,25 +378,25 @@ h1{
 /*как сделать чтобы шрифт был непрозрачным*/
 .item_btn {
   text-decoration: none;
-  font-size: 14pt;
-  line-height: 18pt;
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
-  background-color: black;
-  opacity: 0.1;
+  background-color: rgba(0,0,0,0.1);
   padding: 12px 24px;
   display: inline-block;
   margin-left: 25px;
   margin-bottom: 22px;
+  margin-top: 17px;
 }
 
 .item_btn:hover{
-  opacity: 0.2;
+  background-color: rgba(0,0,0,0.2);
 }
 
 .item_btn:active{
-  opacity: 0.3;
+  background-color: rgba(0,0,0,0.3);
 }
 
 .materials{
@@ -450,8 +458,8 @@ h1{
 .catalog_slider_text{
   margin-top: 20px;
   margin-left: 26px;
-  font-size: 18pt;
-  line-height: 24pt;
+  font-size: 18px;
+  line-height: 24px;
   color: #ffffff;
   font-weight: normal;
   font-family: 'PTSans', sans-serif;
@@ -459,8 +467,8 @@ h1{
 }
 
 .catalog_slider_text span{
-  font-size: 36pt;
-  line-height: 30pt;
+  font-size: 36px;
+  line-height: 30px;
   color: #ffffff;
   font-weight: bold;
   font-family: 'Cuprum', sans-serif;
@@ -470,7 +478,7 @@ h1{
 .catalog_slider .main_btn{
   display: inline-block;
   margin-left: 26px;
-  margin-top: 105px;
+  margin-top: 125px;
 }
 
 .discount{
@@ -527,8 +535,8 @@ h1{
 
 
 .products_price {
-  font-size: 17pt;
-  line-height: 18pt;
+  font-size: 17px;
+  line-height: 18px;
   color: #ffffff;
   font-weight: bold;
   font-family: 'PT Sans', sans-serif;
@@ -539,12 +547,14 @@ h1{
 }
 
 .products_old_price {
-  font-size: 17pt;
-  line-height: 18pt;
+  font-size: 17px;
+  line-height: 18px;
   color: #a9a9a9;
   font-weight: bold;
   font-family: 'PT Sans', sans-serif;
   text-decoration: line-through;
+  margin-bottom: 12px;
+  display: block;
 }
 
 .manufacters_item{
@@ -582,6 +592,11 @@ h1{
   outline: 1px solid green;
 }
 
+.company_contacts .main_btn{
+  padding-left: 69px;
+  padding-right: 69px;
+}
+
 .up_footer{
   background-color: #3d546e;
   padding-bottom: 50px;
@@ -608,8 +623,8 @@ h1{
   width: 600px;
   margin-top: 40px;
   outline: 1px solid green;
-  font-size: 18pt;
-  line-height: 24pt;
+  font-size: 18px;
+  line-height: 24px;
   color: #ffffff;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -642,8 +657,8 @@ h1{
   width: 560px;
   margin-top: 30px;
   margin-left: 40px;
-  font-size: 18pt;
-  line-height: 24pt;
+  font-size: 18px;
+  line-height: 24px;
   color: #ffda96;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -690,8 +705,8 @@ h1{
 
 .footer_copyright{
   width: 240px;
-  font-size: 16pt;
-  line-height: 18pt;
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -751,8 +766,8 @@ h1{
 
 .footer_contacts{
   width: 300px;
-  font-size: 16pt;
-  line-height: 18pt;
+  font-size: 16px;
+  line-height: 18px;
   color: #ffffff;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -779,8 +794,8 @@ h1{
 .breadcrumbs{
   margin-top: 22px;
   margin-bottom: 22px;
-  font-size: 13pt;
-  line-height: 18pt;
+  font-size: 13px;
+  line-height: 18px;
   color: #000000;
   font-weight: normal;
   font-family: 'PT Sans', sans-serif;
@@ -803,8 +818,8 @@ h1{
 
 .breadcrumbs a{
   text-decoration: none;
-  font-size: 13pt;
-  line-height: 18pt;
+  font-size: 13px;
+  line-height: 18px;
   color: #000000;
   font-weight: normal;
   font-family: 'PTSans', sans-serif;
@@ -830,16 +845,16 @@ h1{
   background-color: #f7f3ec;
   padding: 12px 18px;
   display: block;
-  font-size: 13pt;
-  line-height: 18pt;
+  font-size: 13px;
+  line-height: 18px;
   color: #000000;
   font-weight: normal;
   font-family: 'PT Sans', sans-serif;
 }
 
 h3{
-  font-size: 17pt;
-  line-height: 30pt;
+  font-size: 17px;
+  line-height: 30px;
   color: #000000;
   font-weight: bold;
   font-family: 'PT Sans', sans-serif;
@@ -880,8 +895,8 @@ h3{
 }
 
 .login, .register {
-  font-size: 21pt;
-  line-height: 18pt;
+  font-size: 21px;
+  line-height: 18px;
   color: #000000;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -896,8 +911,8 @@ h3{
 }
 
 .services_btn {
-  font-size: 21pt;
-  line-height: 30pt;
+  font-size: 21px;
+  line-height: 30px;
   color: #3d546e;
   font-weight: bold;
   font-family: 'Cuprum', sans-serif;
@@ -905,48 +920,46 @@ h3{
 }
 
 .services_name {
-  font-size: 36pt;
-  line-height: 24pt;
+  font-size: 36px;
+  line-height: 24px;
   color: #3d546e;
   font-weight: bold;
   font-family: 'Cuprum', sans-serif;
 }
 
 .trans_companies {
-  font-size: 18pt;
-  line-height: 20pt;
+  font-size: 18px;
+  line-height: 20px;
   color: #000000;
   font-weight: bold;
   font-family: 'Cuprum', sans-serif;
 }
 
 .about p {
-  font-size: 18pt;
-  line-height: 24pt;
+  font-size: 18px;
+  line-height: 24px;
   color: #ffffff;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
 }
 
 .sort_type_btn {
-  font-size: 13pt;
-  line-height: 18pt;
+  font-size: 13px;
+  line-height: 18px;
   color: #ee3643;
   font-weight: normal;
   font-family: 'PT Sans', sans-serif;
 }
 
 .aside_catalog_form label {
-  font-size: 15pt;
-  line-height: 20pt;
+  font-size: 15px;
+  line-height: 20px;
   color: #000000;
   font-weight: normal;
   font-family: 'PT Sans', sans-serif;
 }
 
-input {
 
-}
 
 .sort_type {
   display: flex;
@@ -970,8 +983,8 @@ input {
 
 .sort_type_view a{
   text-decoration: none;
-  font-size: 13pt;
-  line-height: 18pt;
+  font-size: 13px;
+  line-height: 18px;
   color: #000000;
   font-weight: normal;
   font-family: 'PT Sans', sans-serif;
@@ -1009,8 +1022,8 @@ input {
   padding: 12px 48px;
   background-color: #63a63e;
   position: relative;
-  font-size: 14pt;
-  line-height: 18pt;
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -1029,10 +1042,10 @@ input {
 
 .bookmark_btn {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 12px 33px;
   background-color: #ffffff;
-  font-size: 14pt;
-  line-height: 18pt;
+  font-size: 14px;
+  line-height: 18px;
   color: #32425c;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
@@ -1073,8 +1086,8 @@ input {
 .nav_btn {
   display: inline-block;
   text-decoration: none;
-  font-size: 13pt;
-  line-height: 18pt;
+  font-size: 13px;
+  line-height: 18px;
   color: #000000;
   font-weight: normal;
   font-family: 'PT Sans', sans-serif;
@@ -1112,8 +1125,8 @@ input {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  font-size: 16pt;
-  line-height: 18pt;
+  font-size: 16px;
+  line-height: 18px;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
 }
@@ -1138,22 +1151,42 @@ input {
   background-color: #ffffff;
   padding: 12px 0;
   padding-left: 46px;
-  font-size: 21pt;
-  line-height: 18pt;
+  margin-bottom: 8px;
+  font-size: 21px;
+  line-height: 18px;
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
-.username a{
+.username .name{
   text-decoration: none;
   color: #000000;
 }
 
-.username a:active{
+.username .name:active{
   color: rgba(0,0,0,0.3)
 }
-.username a::before{
+
+.username .logout{
+  display: block;
+  width: 21px;
+  height: 17px;
+  background: url(../img/spritesheet.png) no-repeat;
+  background-position: -10px -787px;
+  margin-right: 10px;
+}
+
+.username .logout:hover{
+  background-position: -10px -861px;
+}
+
+.username .logout:active{
+  background-position: -10px -787px;
+}
+.username .name::before{
   content: "";
   position: absolute;
   top: 12px;
@@ -1164,29 +1197,96 @@ input {
   background-position: -10px -1228px;
 }
 
-.username a:hover::before{
+.username .name:hover::before{
   background-position: -10px -1304px;
 }
 
-.username a:active::before{
+.username .name:active::before{
   background-position: -10px -1228px;
 }
 
-.username a::after{
-  content: "";
-  position: absolute;
-  top: 12px;
-  right: 10px;
-  width: 21px;
-  height: 17px;
+
+
+
+
+
+
+.top_search input{
+  box-sizing: border-box;
+  width: 270px;
+  padding: 12px;
+  padding-left: 49px;
+  font-family: Cuprum, "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  border: none;
+  background-color: #293449;
+  outline: none;
+}
+
+.top_search input:hover {
+    background: #293449;
+}
+
+.top_search input:focus {
+    color: #000000;
+    background: #ffffff;
+}
+
+.top_search_label:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    width: 17px;
+    height: 17px;
+    background: url(../img/spritesheet.png) no-repeat;
+    background-position: -10px -1117px;
+    opacity: 0.3;
+/*
+    top: 12px;
+    left: 18px;
+    font-family: "symbols-technomart";
+    font-size: 18px;
+*/
+/*    color: rgba(255, 255, 255, 0.3);*/
+}
+
+.top_search_label:hover::before{
+  opacity: 1;
+}
+
+.top_search:hover .top_search_label:before {
+    color: #ffffff;
+}
+.top_search_input:focus + .top_search_label:before {
+    color: #ee3643;
+}
+
+
+.top_search {
+  position: relative;
+}
+
+
+
+.checkbox {
+/*  box-sizing: border-box;*/
+  width: 27px;
+  height: 23px;
+/*
+  padding: 12px;
+  padding-left: 49px;
+  font-family: Cuprum, "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  border: none;
+  background-color: #293449;
+  outline: none;
+*/
   background: url(../img/spritesheet.png) no-repeat;
-  background-position: -10px -787px;
+  background-position: -10px -269px;
 }
-
-.username a:hover::after{
-  background-position: -10px -861px;
-}
-
-.username a:active::after{
-  background-position: -10px -824px;
-}
+/* не пойму как задать свою картинку чекбоксам и радио*/

@@ -1967,9 +1967,9 @@ h3{
   background-color: #293449;
 }
 
-#serv_btn_1:checked ~ .slider_controls label[for="serv_btn_1"],
-#serv_btn_2:checked ~ .slider_controls label[for="serv_btn_2"],
-#serv_btn_3:checked ~ .slider_controls label[for="serv_btn_3"] { 
+#serv_btn_1:checked ~ .services_slider_controls label[for="serv_btn_1"],
+#serv_btn_2:checked ~ .services_slider_controls label[for="serv_btn_2"],
+#serv_btn_3:checked ~ .services_slider_controls label[for="serv_btn_3"] { 
   background-color: #ffffff;
   color: #3d546e;
 }

@@ -7,6 +7,7 @@ body{
   margin: 0;
 }
 
+
 .header_nav a{
   font-size: 17px;
   line-height: 17px;
@@ -15,11 +16,21 @@ body{
   font-family: 'Cuprum', sans-serif;
   text-decoration: none;
   color: #ffffff;
-  padding: 19px 34px;
+  padding: 19px 31px;
   border-bottom: 5px solid #293449;
   background-color: #3d546e;
   display: block;
 }
+
+.header_nav .first_a{
+  padding-left: 52px;
+}
+
+.header_nav .last_a{
+  padding-right: 49px;
+}
+
+
 
 .header_nav a:hover{
   background-color: #293449;
@@ -93,9 +104,23 @@ body{
   font-family: 'Cuprum', sans-serif;
 }
 
-.services p{
+.main_block_2 h2{
+  margin-top: 22px;
+  margin-bottom: 30px;
+}
+
+.services  p{
   width: 405px;
+  
 /*  margin: 0*/
+}
+
+.services h2{
+  margin-bottom: 30px;
+}
+
+.main_block p{
+  
 }
 
 h1{
@@ -104,8 +129,8 @@ h1{
   color: #000000;
   font-weight: bold;
   font-family: 'PT Sans', sans-serif;
-  margin-bottom: 10px;
-  margin-top: 14px;
+  margin-bottom: 32px;
+  margin-top: 12px;
 }
 
 .catalog_title h1{
@@ -147,6 +172,10 @@ h1{
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
   text-decoration: none;
+}
+
+.added{
+  background-color: #ee3643;
 }
 
 .bookmarks:active, .basket:active, .order:active{
@@ -233,7 +262,7 @@ h1{
   width: 940px;
   margin-bottom: 40px;
   display: flex;
-  justify-content: space-between;
+/*  justify-content: space-between;*/
 }
 
 .info {
@@ -245,13 +274,14 @@ h1{
   font-family: 'Cuprum', sans-serif;
   width: 200px;
   margin-left: 50px;
-/*  margin-right: 30px;*/
+  margin-right: 70px;
 /*  outline: 1px solid green;*/
 }
 
 .info p{
   padding: 0;
-  padding-top: 6px;
+  padding-top: 4px;
+  padding-left: 2px;
   margin: 0;
 }
 
@@ -290,6 +320,7 @@ h1{
   font-weight: normal;
   font-family: 'Cuprum', sans-serif;
   text-align: center;
+  padding-top: 2px;
 }
 
 .login_options{
@@ -298,12 +329,12 @@ h1{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-/*  margin: 0 auto;*/
+  margin-left: 69px;
 }
 
 .login_options .login{
   background-color: white;
-  padding: 14px 23px;
+  padding: 14px 25px;
   padding-left: 48px;
   position: relative;
   text-decoration: none;
@@ -346,7 +377,7 @@ h1{
 
 .login_options .register{
   background-color: white;
-  padding: 14px 23px;
+  padding: 14px 25px;
   text-decoration: none;
 }
 
@@ -354,9 +385,9 @@ h1{
 /*не влезло, шрифт больше, чем в макете*/
 .header_nav ul{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 0 0px;
   list-style: none;
 /*  padding: 12px 0;*/
 }
@@ -487,6 +518,11 @@ h1{
 /*  outline: 1px solid green;*/
 }
 
+.catalog_slider input[type=radio] {
+    position:absolute;
+    opacity:0;
+}
+
 .slide_text{
   font-size: 18px;
   line-height: 24px;
@@ -515,7 +551,7 @@ h1{
     position: relative;
     width: 240px;
     height: 220px;
-    padding-top:40px;
+    padding-top:34px;
     
 /*
     text-align:center;
@@ -526,7 +562,7 @@ h1{
 .services_slider_controls::after{
   content: "";
   position: absolute;
-  top: 0px;
+  top: -8px;
   right: 0px;
   width: 7px;
   height: 260px;
@@ -552,22 +588,21 @@ h1{
 .services_slide{
     display:none;
 }
-.services_slide:nth-child(1){
-    display:block;
-}
+
 
 .services_slide_text{
 /*  margin: 38px 80px;*/
-  margin-top: 42px;
+  margin-top: 40px;
   margin-left: 80px;
   width: 275px;
 }
 
 .services_slide img{
   position: absolute;
-  top: 22px;
+  top: 20px;
   right: 0;
 }
+
 
 .services_slide_title{
   font-size: 36px;
@@ -591,7 +626,7 @@ h1{
   width: 275px;
 }
 
-.slider_controls i{
+.slider_controls label{
     display:inline-block;
     width:6px;
     height:6px;
@@ -601,6 +636,12 @@ h1{
     vertical-align:top;
     border-radius:50%;
     cursor:pointer;
+}
+
+#btn_1:checked ~ .slider_controls label[for="btn_1"],
+#btn_2:checked ~ .slider_controls label[for="btn_2"],
+#btn_3:checked ~ .slider_controls label[for="btn_3"] { 
+    background:#ff5357;
 }
 
 .slide{
@@ -708,7 +749,7 @@ h1{
 
 .products_item{
   border: 1px solid #eaeaea;
-  width: 220px;
+  width: 218px;
   text-align: center;
 }
 
@@ -729,7 +770,7 @@ h1{
   background-color: #ff5357;
   padding: 11px 30px;
   margin:10px auto;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   border-radius:3px;
   display: inline-block;
 }
@@ -755,10 +796,12 @@ h1{
 /*  margin-bottom:10px;*/
   display: block;
   min-height:20px;
+  margin-top: -20px;
 }
 
 .manufacters_item{
   width: 218px;
+  height: 143px;
   border: 1px solid #eaeaea;
   margin-bottom: 20px;
 }
@@ -777,13 +820,13 @@ h1{
 }
 
 .manufacters{
-  margin-bottom: 52px;
+  margin-bottom: 64px;
 }
 
 .main_block{
   width: 940px;
   padding-top: 42px;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
 }
 
 
@@ -795,7 +838,7 @@ h1{
   padding-bottom: 88px;
 */
   padding-top: 58px;
-  padding-bottom: 87px;
+  padding-bottom: 84px;
 }
 
 .company_flex{
@@ -817,11 +860,17 @@ h1{
   width: 220px;
   padding:10px 0;
   text-align:center;
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 .company_about p{
+/*  margin-top: 30px;*/
   margin-bottom: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .company_contacts{
@@ -831,18 +880,23 @@ h1{
 
 .company_contacts p{
   width: 180px;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .company_contacts .main_btn{
   padding-left: 61px;
   padding-right: 61px;
-  margin-top: 32px;
+  margin-top: 36px;
 }
 
 .up_footer{
   background-color: #3d546e;
-  padding-bottom: 34px;
+  padding-bottom: 32px;
 }
 
 .up_footer_flex{
@@ -857,14 +911,19 @@ h1{
 }
 
 .about p{
+  width: 326px;
   padding-bottom: 0;
+  padding-left: 2px;
+  padding-top: 2px;
 }
+
+
 
 .nav_block
 
 .footer_nav{
 /*  width: 546px;*/
-  margin-top: 36px;
+  margin-top: 38px;
 /*  outline: 1px solid green;*/
   font-size: 18px;
   line-height: 24px;
@@ -902,7 +961,7 @@ h1{
 
 .catalog_nav{
 /*  width: 524px;*/
-  margin-top: 36px;
+  margin-top: 34px;
   margin-left: 20px;
   font-size: 18px;
   line-height: 24px;
@@ -937,7 +996,7 @@ h1{
 
 .bottom_footer{
   background-color: #33445a;
-  padding-top: 35px;
+  padding-top: 37px;
   padding-bottom: 30px;
 }
 
@@ -967,6 +1026,7 @@ h1{
   display: flex;
   justify-content: space-between;
   margin-right: 118px;
+  margin-top: -2px
 }
 
 .social_btn{
@@ -1045,7 +1105,7 @@ h1{
 }
 
 .breadcrumbs{
-  margin-top: 22px;
+  margin-top: 21px;
   margin-bottom: 22px;
   font-size: 13px;
   line-height: 18px;
@@ -1064,8 +1124,14 @@ h1{
 }
 
 .breadcrumbs li{
-  margin-right: 30px;
+  margin-right: 34px;
 }
+
+.breadcrumbs li:first-child{
+  margin-right: 39px;
+}
+
+
 
 
 .breadcrumbs a{
@@ -1082,8 +1148,8 @@ h1{
   content: "";
   position: absolute;
   top: 1px;
-  left: -19px;
-  width: 7px;
+  left: -26px;
+  width: 8px;
   height: 12px;
   background: url(../img/sprite_arrows.png) no-repeat;
   background-position: -10px -190px;
@@ -1092,7 +1158,7 @@ h1{
 .aside_catalog{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 56px;
+  margin-bottom: 60px;
 }
 
 .aside_catalog_form {
@@ -1125,7 +1191,7 @@ h3{
   color: #000000;
   font-weight: bold;
   font-family: 'PT Sans', sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .catalog_sort{
@@ -1133,7 +1199,7 @@ h3{
 /*  outline: 1px solid green;*/
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   border-radius: 3px;
 }
 
@@ -1141,12 +1207,12 @@ h3{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .products_item_clg{
   position:relative;
-  width: 220px;
+  width: 218px;
   margin-bottom: 20px;
   text-align: center;
   border: 1px solid #eaeaea;
@@ -1165,13 +1231,13 @@ h3{
     height:60px;
     text-indent:-1000px;
     overflow:hidden;
-    z-index:20;
+    z-index:10;
 }
 
 .catalog_item .flag{
     position:absolute;
-    top:-1px;
-    right:-1px;
+    top:-0px;
+    right:-0px;
     width:60px;
     height:60px;
     text-indent:-1000px;
@@ -1260,6 +1326,7 @@ h3{
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: -4px;
 }
 
 .trans_companies li{
@@ -1498,7 +1565,7 @@ h3{
 }
 
 .next{
-  padding: 12px 32px;
+  padding: 9px 32px;
 }
 
 .nav_btn:hover{
@@ -1517,11 +1584,12 @@ h3{
 
 .login_options_logged {
   width: 300px;
+  margin-left: 51px;
 }
 
 .my_orders{
   margin: 0;
-  margin-top: 12px;
+  margin-top: 8px;
   padding: 0;
   padding-left: 18px;
 /*  list-style: none;*/
@@ -1559,7 +1627,7 @@ h3{
 
 .username {
   background-color: #ffffff;
-  padding: 12px 0;
+  padding: 14px 0;
   padding-left: 46px;
   margin-bottom: 8px;
   font-size: 21px;
@@ -1778,9 +1846,9 @@ h3{
 
 .manufacter_checkbox {
   position: relative;
-  padding-left: 30px;
+  padding-left: 34px;
   cursor: pointer;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 .filter_manufacters :last-child{
@@ -1793,8 +1861,8 @@ h3{
 
 .manufacter_checkbox input[type="checkbox"] + .checkbox_indicator {
   position: absolute;
-  top: -1px;
-  left: -2px;
+  top: 0px;
+  left: 0px;
   width: 27px;
   height: 23px;
   background: url(../img/spritesheet.png) no-repeat;
@@ -1809,7 +1877,7 @@ h3{
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 18px;
+  padding-bottom: 26px;
 /*  padding-top: 20px;*/
 }
 
@@ -1827,7 +1895,7 @@ h3{
 .supply_radio input[type="radio"] + .radio_indicator {
   position: absolute;
   top: -3px;
-  left: 0;
+  left: -2px;
   width: 25px;
   height: 25px;
   background: url(../img/spritesheet.png) no-repeat;
@@ -1841,7 +1909,7 @@ h3{
 .filter_supply {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   margin-top: 15px;
 }
 
@@ -1860,7 +1928,12 @@ h3{
   margin-top: 34px;
 }
 
-.services_slider_controls i{
+.services_slider input[type=radio] {
+    position:absolute;
+    opacity:0;
+}
+
+.services_slider_controls label{
   display: block;
 /*  width: 240px;*/
   background-color: #3d546e;
@@ -1874,14 +1947,23 @@ h3{
   font-style: normal;
 }
 
-.services_slider_controls i:hover{
+.services_slider_controls label:hover{
   background-color: #293449;
 }
 
+#serv_btn_1:checked ~ .slider_controls label[for="serv_btn_1"],
+#serv_btn_2:checked ~ .slider_controls label[for="serv_btn_2"],
+#serv_btn_3:checked ~ .slider_controls label[for="serv_btn_3"] { 
+  background-color: #ffffff;
+  color: #3d546e;
+}
+
+/*
 .services_slider_controls .active{
   background-color: #ffffff;
   color: #3d546e;
 }
+*/
 
 .slider_controls {
   position:absolute;
@@ -1891,14 +1973,16 @@ h3{
     height:10px;
     margin-left:-100px;
     text-align:center;
-    z-index:1000;
+    z-index:10;
 }
 
 .modal_content {
   display: none;
+/*
   position: absolute;
   top: 120px;
   left: 50%;
+*/
   margin-left: -330px;
   width: 620px;
 /*  padding: 46px 80px;*/
@@ -1906,6 +1990,10 @@ h3{
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
   border-top: 7px solid #ff5357;
+  z-index: 20;
+  position: fixed;
+  top: 20%;
+  left: 50%;
 }
 
 .modal_content p{
@@ -2105,4 +2193,25 @@ h3{
 
 .main_block_3 p{
   margin-top: 30px;
+}
+
+.modal_content_show{
+  display: block;
+}
+
+#btn_1:checked ~ .slides .slide:nth-child(1) { 
+    display: block;
+}
+#btn_2:checked ~ .slides .slide:nth-child(2) { 
+    display: block;
+}
+
+#serv_btn_1:checked ~ .services_slides .services_slide:nth-child(1) { 
+    display: block;
+}
+#serv_btn_2:checked ~ .services_slides .services_slide:nth-child(2) { 
+    display: block;
+}
+#serv_btn_3:checked ~ .services_slides .services_slide:nth-child(3) { 
+    display: block;
 }

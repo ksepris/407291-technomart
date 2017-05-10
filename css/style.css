@@ -748,6 +748,7 @@ h1{
 }
 
 .products_item{
+  position: relative;
   border: 1px solid #eaeaea;
   width: 218px;
   text-align: center;
@@ -1234,6 +1235,21 @@ h3{
     z-index:10;
 }
 
+.products_item .flag{
+    position:absolute;
+    top:-1px;
+    right:-1px;
+    width:60px;
+    height:60px;
+    text-indent:-1000px;
+    overflow:hidden;
+    z-index:10;
+}
+
+.products_item .flag_new{
+    background:url("../img/new-flag.png") no-repeat 0 0;
+}
+
 .catalog_item .flag{
     position:absolute;
     top:-0px;
@@ -1245,7 +1261,7 @@ h3{
     z-index:20;
 }
 
-.products_item_clg .flag-new{
+.products_item_clg .flag_new{
     background:url("../img/new-flag.png") no-repeat 0 0;
 }
 

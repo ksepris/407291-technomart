@@ -187,7 +187,8 @@ body{
   left: 16px;
   width: 14px;
   height: 16px;
-  background: url(../img/spritesheet.png) no-repeat;
+  background-image: url(../img/spritesheet.png);
+  background-repeat: no-repeat;
   background-position: -10px -118px;
   opacity: 0.3;
 }

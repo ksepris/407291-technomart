@@ -1960,7 +1960,7 @@ h3{
   left: 50%;
 }
 
-.modal_content p{
+.modal_content_buy p{
   position: relative;
   font-size: 30px;
   line-height: 18px;
@@ -1971,7 +1971,7 @@ h3{
   margin-left: 178px;
 }
 
-.modal_content p::before{
+.modal_content_buy p::before{
   content: '';
   position: absolute;
   top: -24px;

@@ -535,7 +535,7 @@ body{
   line-height: 24px;
   color: #ffffff;
   font-weight: normal;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   padding: 0px 26px;
 }
 
@@ -670,7 +670,7 @@ body{
   line-height: 24px;
   color: #ffffff;
   font-weight: normal;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   outline: 1px solid green;
 }
 
@@ -737,6 +737,10 @@ body{
   border: 1px solid #eaeaea;
   width: 218px;
   text-align: center;
+}
+
+.products_item:hover{
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 .products_item a{
@@ -1101,7 +1105,7 @@ body{
 }
 
 .breadcrumbs li{
-  margin-right: 34px;
+  margin-right: 40px;
 }
 
 .breadcrumbs li:first-child{
@@ -1118,14 +1122,14 @@ body{
   line-height: 18px;
   color: #000000;
   font-weight: normal;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
 }
 
 .breadcrumbs .path::before{
   content: '';
   position: absolute;
-  top: 1px;
+  top: 2px;
   left: -26px;
   width: 8px;
   height: 12px;
@@ -1725,7 +1729,7 @@ h3{
 
 
 .range-filter {
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 17px;
   color: #000000;
   width: 220px;
@@ -1797,7 +1801,7 @@ h3{
   display: inline-block;
   vertical-align: baseline;
   width: 95px;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 17px;
   padding: 10px 0px;
   text-align: center;
@@ -1810,7 +1814,7 @@ h3{
 .price-controls p{
   display: inline-block;
   vertical-align: baseline;
-  font-family: 'PTSans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 17px;
   width: 10px;
   margin: 0 10px;
